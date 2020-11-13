@@ -1,0 +1,277 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5970000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user navigates to the website with \"url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"url\"",
+                  "offset": 39
+                }
+              ],
+              "location": "StepDefs.testCase1.the_user_navigates_to_the_website_with(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-13T05:20:45.994Z",
+        "before": [
+          {
+            "result": {
+              "duration": 13810000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefs.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Updating user info",
+        "description": "",
+        "id": "test-case-1;updating-user-info",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefs.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d86.0.4240.198)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Aigerims-MacBook-Pro.local\u0027, ip: \u00272600:1008:b16c:882c:254c:2e7e:295b:871a%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.14.6\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /var/folders/c9/mzt_gq_14k1...}, goog:chromeOptions: {debuggerAddress: localhost:56137}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: f5358c892f93d4be2c8de2e779319748\n*** Element info: {Using\u003dxpath, value\u003d(//input[@id\u003d\u0027signInFormUsername\u0027])[2]}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy17.sendKeys(Unknown Source)\n\tat StepDefs.testCase1.user_logs_in_with_and(testCase1.java:36)\n\tat ✽.user logs in with \"username\" and \"password\"(file:///Users/gesha1996/Documents/LiquibaseHW/src/test/resources/features/testCase1.feature:8)\n",
+              "duration": 2104000000,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "user logs in with \"username\" and \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 33
+                }
+              ],
+              "location": "StepDefs.testCase1.user_logs_in_with_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user clicks on Settings",
+            "match": {
+              "location": "StepDefs.testCase1.user_clicks_on_Settings()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user clicks on User Info",
+            "match": {
+              "location": "StepDefs.testCase1.user_clicks_on_User_Info()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7000000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user fills the fields",
+            "match": {
+              "location": "StepDefs.testCase1.user_fills_the_fields(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Aigerim"
+                ]
+              },
+              {
+                "cells": [
+                  "T"
+                ]
+              },
+              {
+                "cells": [
+                  "Nazaralieva"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "the user verifies updated info",
+            "match": {
+              "location": "StepDefs.testCase1.the_user_verifies_updated_info()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user navigates to the website with \"url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"url\"",
+                  "offset": 39
+                }
+              ],
+              "location": "StepDefs.testCase1.the_user_navigates_to_the_website_with(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-13T05:21:08.281Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d86.0.4240.198)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Aigerims-MacBook-Pro.local\u0027, ip: \u00272600:1008:b16c:882c:254c:2e7e:295b:871a%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.14.6\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /var/folders/c9/mzt_gq_14k1...}, goog:chromeOptions: {debuggerAddress: localhost:56137}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: f5358c892f93d4be2c8de2e779319748\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)\n\tat StepDefs.Hooks.setup(Hooks.java:19)\n",
+              "duration": 11000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "StepDefs.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "",
+        "description": "",
+        "id": "test-case-1;",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefs.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "user clicks on Project",
+            "match": {
+              "location": "StepDefs.testCase2.user_clicks_on_Project()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "user clicks on expand project",
+            "match": {
+              "location": "StepDefs.testCase2.user_clicks_on_expand_project()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "user clicks on operations button and chooses pass for result",
+            "match": {
+              "location": "StepDefs.testCase2.user_clicks_on_operations_button_and_chooses_pass_for_result()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "user expands operations",
+            "match": {
+              "location": "StepDefs.testCase2.user_expands_operations()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "user verifies no results",
+            "match": {
+              "location": "StepDefs.testCase2.user_verifies_no_results()"
+            },
+            "keyword": "* "
+          }
+        ]
+      }
+    ],
+    "name": "Test Case 1",
+    "description": "",
+    "id": "test-case-1",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/testCase1.feature",
+    "tags": []
+  }
+]
