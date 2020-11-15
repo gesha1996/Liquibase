@@ -17,11 +17,12 @@ public class Page2 {
     public WebElement expandProjectBtn;
     @FindBy(xpath = "//div[contains(text(), \"Operations\")]")
     public WebElement operationsBtn;
-    @FindBy(xpath = "//div[@class='mat-select-trigger ng-tns-c113-11']")
+    @FindBy(id = "mat-select-1")
+
     public WebElement resultBtn;
-    @FindBy(xpath = "//span[contains(text(), \" Pass \")]")
+    @FindBy(id="mat-option-5")
     public WebElement passBtn;
-    @FindBy(xpath = "//span[@class='mat-content ng-tns-c120-17']")
+    @FindBy(id = "mat-expansion-panel-header-0")
     public WebElement noOperations;
     @FindBy(xpath = "//div[contains(text(),\" Whoops! It looks like we don't have any Operations to show you here. Go add some! \")]")
     public WebElement text;
